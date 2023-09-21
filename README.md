@@ -32,4 +32,41 @@
    - govt_check_l3m: Indicates if government checks have been conducted for each warehouse in the last 3 months.
    - product_wg_ton: Represents the weight of the product in tons.
 
+   ### Constructing a Regression Model - Steps
+   
+   1. Data Preparation and Analysis:
 
+          - Explore and clean training data.
+          - Analyze variable distributions and correlations.
+          -  Encode categorical variables.
+          -  Split data into independent and predictor variables.
+
+   2.  Test Data Preprocessing:
+
+           - Prepare test data using the same preprocessing steps
+           
+   3.  Regression Modeling:
+
+           - Train a Linear Regression Model.
+           - Evaluate Ensemble Learning Algorithms: Gradient Boost, AdaBoost, Random Forest, Bagging.
+           
+   4.  Hyperparameter Tuning:
+
+           - Optimize model hyperparameters using Randomized Search Cross-Validation.
+           
+   5.   Model Predictions:
+
+           - Use the best model to predict test data
+           - Regression plot to visualize predicted vs. actual values.
+           
+   6.   Conclusion
+
+### Findings:
+After thoroughly assessing a range of regression algorithms, the Gradient Boosting method has emerged as the most precise option forthe regression task.
+Through an extensive hyperparameter tuning process using Randomized Search Cross-Validation, our chosen GradientBoostingRegressor model has been optimized for peak performance with 'n_estimators' set to 100, 'max_depth' at 5, and a 'learning_rate' of 0.1.
+
+Evaluation Metrics for the Best Model:
+
+Mean Squared Error (MSE): 802,552.71
+Root Mean Squared Error (RMSE): 895.85
+R-squared (R^2): 0.99
